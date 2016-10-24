@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Punto de Venta Productos</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+  <div class="container" >
+    <br>
+    <div class="tab-content">
+        <div class="col-sm-3 ">
+          <input type="text" class="form-control" id="campoEntradaClientePtoVA" name="campoEntradaClientePtoVA" placeholder="ID CLIENTE">
+        </div>
+        <div class="col-sm-3 text-center" >
+         <label id="InfoCliEm"><FONT FACE="calibri" SIZE=5 COLOR=blue>-</FONT></label>
+
+        </div>
+        <div class="col-sm-3 text-center">
+          <label id="InfoCliTip"><FONT FACE="calibri" SIZE=5 COLOR=green>-</FONT></label>
+        </div>
+        <div class="col-sm-3 text-center">
+          <label id="InfoCliDes"><FONT FACE="calibri" SIZE=5 COLOR=red>-</FONT></label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="tab-content" >
+        <div id="home" class="tab-pane fade in active">
+          <h3><center>VENTA DE PRODUCTOS</center></h3>
+        </div>
+              <div class="row">
+                  <div class="col-sm-6">
+            <!--        <div class="panel panel-default" id="Productos">
+                        <div class="panel-heading"><center>PRODUCTOS</center>
+                        </div>
+                        <div class="panel-body">
+
+                          <div id="demoProductoBuscarPtoVA">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="campoEntradaProductoPtoVA" name="campoEntradaProductoPtoVA" placeholder="Buscar...">
+                                      </div>
+                                    </div>
+                                </form>
+
+                                <div id="resultadoBusquedaProductoPtoVA"  style=" height:160px; overflow: auto;">
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                      </div>
+
+                      !-->
+
+
+                      <div class="panel panel-default" id="Productos">
+
+                        <div class="panel-body">
+                          <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#menu1">Alimentos</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Paquetes</a></li>
+                            <li><a data-toggle="tab" href="#menu3">Dulcería</a></li>
+                          </ul>
+
+
+                            <div class="tab-content">
+                                <div id="menu1" class="tab-pane fade in active">
+                                  <br>
+                                    <div id="demoProductoBuscarPtoVA">
+                                          <form class="form-horizontal">
+                                              <div class="form-group">
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" id="campoEntradaProductoPtoVA" name="campoEntradaProductoPtoVA" placeholder="Buscar...">
+                                                </div>
+                                              </div>
+                                          </form>
+
+                                          <div id="resultadoBusquedaProductoPtoVA"  style=" height:412px; overflow: auto;">
+
+                                          </div>
+
+                                    </div>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                  <br>
+                                  <div id="demoPaqueteBuscarPtoVA">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="campoEntradaPaquetePtoVA" name="campoEntradaPaquetePtoVA" placeholder="Buscar...">
+                                              </div>
+                                            </div>
+                                        </form>
+                                        <div id="resultadoBusquedaPaquetePtoVA"  style=" height:412px; overflow: auto;">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div id="menu3" class="tab-pane fade">
+                                  <br>
+                                  <div id="demo DulceriaBuscarPtoVA">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="campoEntradaDulceriaPtoVA" name="campoEntradaDulceriaPtoVA" placeholder="Buscar...">
+                                              </div>
+                                            </div>
+                                        </form>
+                                        <div id="resultadoBusquedaDulceriaPtoVA"  style=" height:412px; overflow: auto;">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+                  <!--
+                  <div class="col-sm-6">
+                    <div class="panel panel-default" id="Paquetes">
+                        <div class="panel-heading"><center>PAQUETES</center>
+                        </div>
+                        <div class="panel-body">
+                          <div id="demoPaqueteBuscarPtoVA">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="campoEntradaPaquetePtoVA" name="campoEntradaPaquetePtoVA" placeholder="Buscar...">
+                                      </div>
+                                    </div>
+                                </form>
+                                <div id="resultadoBusquedaPaquetePtoVA"  style=" height:160px; overflow: auto;">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                  </div>
+                    !-->
+      <!--         </div>
+
+               <div class="row"> !-->
+                  <div class="col-sm-6">
+                      <div class="panel panel-default" id="Venta">
+                        <div class="panel-heading"><center>VENTA</center>
+                        </div>
+                        <div class="panel-body" style=" height:525px; overflow: auto;">
+                          <form>
+                            <table id="tablaVenta"  class='table'>
+                                  <thead>
+                                    <tr>
+                                      <th>ID</th>
+                                      <th>Elemento</th>
+                                      <th>Precio</th>
+                                      <th>Cantidad</th>
+                                      <th>Eliminar</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+
+                                </tbody>
+                              </table>
+                              <br>
+                            </form>
+
+
+
+
+                          <div id="demoVenta">
+                                <div id="resultadoVenta"  style=" height:190px; overflow: auto;">
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                 </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <label id="nomSTotal"><FONT FACE="calibri" SIZE=5 COLOR=black>SUBTOTAL: <FONT FACE="arial" SIZE=5 COLOR=blue>$</FONT></FONT></label><label id="STotal"></label>
+                  </div>
+                    <div class="col-sm-4">
+                      <label id="nomTotal"><FONT FACE="arial" SIZE=5 COLOR=black>TOTAL: <FONT FACE="arial" SIZE=5 COLOR=red>$</FONT></FONT></label><label id="Total"></label>
+                    </div>
+                    <center>
+                      <div class="col-sm-2">
+                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demoCancelarVentaA" id="CancelarVentaABtn">Cancelar</button>
+                      </div>
+                      <div class="col-sm-2">
+                        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demoConfirmarVentaA" id="ConfirmarVentaABtn">Confirmar</button>
+                  </center>
+              </div>
+            </div>
+        </div>
+      </div>
+	  <CENTER>
+		<div class="col-sm-3">
+			<label id="nomSTotal">
+				<FONT FACE="calibri" SIZE=5 COLOR=black>TIKET DE VENTA 
+				<FONT FACE="arial" SIZE=5 COLOR=blue>
+				</FONT>
+				</FONT>
+				</label>
+			<label id="STotal"></label>
+			<form>
+				<div id="resultadoBusquedaTiket">
+				</div>
+			</form>
+		</div>
+	  </div>
+	</CENTER>
+	  
+  </div>
+<!--*****************************************************************************-->
+<script>
+window.onload = function() {
+  muestraPaquetePtoVA ();
+  muestraProductoPtoVA ();
+  muestraDulcePtoVA ();
+};
+</script>
+<script type="text/javascript" src="js/buscarPaquetesPtoVenta.js"></script>
+<script type="text/javascript" src="js/buscarProductosPtoVenta.js"></script>
+<script type="text/javascript" src="js/buscarClientePtoVenta.js"></script>
+<script type="text/javascript" src="js/buscarDulceriaPtoVA.js"></script>
+</body>
+</html>
